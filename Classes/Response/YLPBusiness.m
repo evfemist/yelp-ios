@@ -27,6 +27,7 @@
         
         _name = businessDict[@"name"];
         _identifier = businessDict[@"id"];
+        _alias = businessDict[@"alias"];
         NSString *phone = [businessDict ylp_objectMaybeNullForKey:@"phone"];
         _phone = phone.length > 0 ? phone : nil;
         
